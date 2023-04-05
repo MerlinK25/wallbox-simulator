@@ -8,6 +8,7 @@
   import ChargingStateSelector from './charging-state/ChargingStateSelector.svelte'
   import PluginCableButton from './cable/PluginCableButton.svelte'
   import WallboxSettings from './WallboxSettings.svelte';
+  import AuthorizationMode from './AuthorizationMode.svelte';
 
   export let webSocketUrl = 'wss://connection/string...'
 
@@ -17,6 +18,10 @@
 
   <div class="max-w-sm m-auto">
     <WallboxSettings />
+  </div>
+
+  <div class="max-w-sm m-auto">
+    <AuthorizationMode />
   </div>
   
   <div class="max-w-sm m-auto">
